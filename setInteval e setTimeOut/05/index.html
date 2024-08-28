@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05</title>
+  </head>
+  <body>
+    <span
+      id="contador"
+      style="
+        color: rgb(0, 110, 74);
+        font-size: 27px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      "
+      >0 s</span
+    >
+    <script>
+      let count = document.getElementById("contador");
+      let i = 0;
+      setInterval(() => {
+        i++;
+        count.innerText = i + " s";
+      }, 1000);
+    </script>
+  </body>
+</html>
